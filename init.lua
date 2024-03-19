@@ -1,19 +1,5 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
-vim.opt.relativenumber = true
-
-vim.opt.splitbelow = true
-vim.opt.splitright = true
-vim.g.VM_default_mappings   = 0
-vim.g.VM_maps               = {
-  ["I BS"] = '', -- disable backspace mapping
-  ["Find Under"] = "<C-d>",
-  ["Find Subword Under"] = "<C-d>",
-}
-
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldenable = false
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
