@@ -35,6 +35,7 @@ return {
         "eslint-lsp",
         "clangd",
         "clang-format",
+        "tailwindcss-language-server",
       },
     },
   },
