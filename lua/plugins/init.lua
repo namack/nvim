@@ -36,6 +36,7 @@ return {
         "clangd",
         "clang-format",
         "tailwindcss-language-server",
+        "gopls",
       },
     },
   },
@@ -54,6 +55,7 @@ return {
         "tsx",
         "markdown",
         "markdown_inline",
+        "go",
       },
       indent = {
         enable = true,
