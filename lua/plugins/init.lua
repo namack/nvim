@@ -37,6 +37,7 @@ return {
         "clang-format",
         "tailwindcss-language-server",
         "gopls",
+        "prisma-language-server",
       },
     },
   },
@@ -56,6 +57,7 @@ return {
         "markdown",
         "markdown_inline",
         "go",
+        "prisma",
       },
       indent = {
         enable = true,
