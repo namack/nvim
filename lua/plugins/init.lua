@@ -105,18 +105,21 @@ return {
       {
         "zbirenbaum/copilot-cmp",
         config = function()
-          require("copilot_cmp").setup()
+          require("copilot_cmp").setup {
+            event = { "InsertEnter", "LspAttach" },
+            fix_pairs = true,
+          }
         end,
       },
     },
     opts = {
       sources = {
-        { name = "nvim_lsp", group_index = 2 },
-        { name = "copilot", group_index = 2 },
-        { name = "luasnip", group_index = 2 },
-        { name = "buffer", group_index = 2 },
-        { name = "nvim_lua", group_index = 2 },
-        { name = "path", group_index = 2 },
+        { name = "nvim_lsp", priority = 1, group_index = 2 },
+        { name = "copilot", priority = 2, group_index = 2 },
+        { name = "luasnip", priority = 1, group_index = 2 },
+        { name = "buffer", priority = 1, group_index = 2 },
+        { name = "nvim_lua", priority = 1, group_index = 2 },
+        { name = "path", priority = 1, group_index = 2 },
       },
     },
   },
