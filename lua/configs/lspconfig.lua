@@ -16,6 +16,9 @@ for _, lsp in ipairs(servers) do
 end
 
 require("lspconfig").tsserver.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
   init_options = {
     plugins = {
       {
@@ -51,6 +54,7 @@ end
 
 lspconfig.volar.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   -- filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
   on_new_config = function(new_config, new_root_dir)
