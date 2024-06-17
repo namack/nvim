@@ -21,6 +21,12 @@ return {
     end,
   },
   {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      require "configs.telescope"
+    end,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
