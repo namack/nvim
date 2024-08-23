@@ -38,7 +38,7 @@ return {
         "typescript-language-server",
         "vue-language-server",
         "prettier",
-        "eslint_d",
+        "eslint-lsp",
         "clangd",
         "clang-format",
         "tailwindcss-language-server",
